@@ -419,38 +419,6 @@ h1 span,
   letter-spacing: 0.6px;
 }
 
-.intro-strip {
-  background: #eeefe8;
-}
-
-.intro-inner {
-  display: flex;
-  min-height: 74px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.intro-inner p {
-  margin: 0;
-  color: #62675d;
-  font-size: 12px;
-}
-
-.intro-inner p strong {
-  color: var(--ink);
-  font-weight: 700;
-}
-
-.strip-star {
-  color: #8da568;
-  font-size: 18px;
-}
-
-.intro-inner .strip-side {
-  font-size: 10px;
-}
-
 .section {
   padding-block: 106px;
 }
@@ -464,13 +432,11 @@ h1 span,
 }
 
 .section-heading .eyebrow,
-.about-copy .eyebrow,
 .contact-copy .eyebrow {
   margin-bottom: 15px;
 }
 
 .section-heading h2,
-.about-copy h2,
 .contact-copy h2 {
   margin-bottom: 0;
   font-size: clamp(34px, 4vw, 47px);
@@ -563,134 +529,6 @@ h1 span,
   font-weight: 700;
 }
 
-.about-section {
-  overflow: hidden;
-  background: var(--dark-green);
-  color: var(--white);
-}
-
-.about {
-  display: grid;
-  min-height: 438px;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 95px;
-  padding-block: 68px;
-}
-
-.about-visual {
-  position: relative;
-  display: grid;
-  min-height: 290px;
-  place-items: center;
-}
-
-.about-circle {
-  position: relative;
-  display: flex;
-  width: 254px;
-  height: 254px;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
-  border: 1px solid rgba(224, 236, 210, 0.3);
-  border-radius: 50%;
-}
-
-.about-circle::before,
-.about-circle::after {
-  position: absolute;
-  inset: 26px;
-  border: 1px solid rgba(224, 236, 210, 0.18);
-  border-radius: 50%;
-  content: "";
-}
-
-.about-circle::after {
-  inset: 53px;
-}
-
-.about-circle span {
-  position: relative;
-  z-index: 1;
-  color: #d9e8c7;
-  font-family: var(--font-heading);
-  font-size: 34px;
-  font-weight: 400;
-}
-
-.about-circle span:nth-child(2) {
-  color: #ecca7b;
-  transform: translateY(-18px);
-}
-
-.about-circle span:nth-child(3) {
-  transform: translateY(13px);
-}
-
-.about-sticker {
-  position: absolute;
-  right: 7%;
-  bottom: 13px;
-  padding: 14px 17px;
-  transform: rotate(-5deg);
-  border-radius: 5px;
-  background: #f1cb79;
-  color: #3e4538;
-  font-size: 11px;
-  line-height: 1.6;
-}
-
-.about-sticker strong {
-  font-size: 12px;
-}
-
-.about-label {
-  position: absolute;
-  bottom: 4px;
-  left: 5%;
-  color: #a7b49b;
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 1.1px;
-}
-
-.about-copy .eyebrow {
-  color: #b5c3a9;
-}
-
-.about-copy h2 {
-  margin-bottom: 17px;
-  font-size: clamp(36px, 4vw, 48px);
-}
-
-.about-copy h2 span {
-  color: #c8df9f;
-}
-
-.about-copy > p:not(.eyebrow) {
-  max-width: 380px;
-  margin-bottom: 23px;
-  color: #c0cabe;
-  font-size: 12px;
-  line-height: 1.9;
-}
-
-.button-light {
-  min-height: 45px;
-  background: #d8e6c6;
-  color: #263426;
-  font-size: 11px;
-}
-
-.button-light:hover {
-  background: #e5efd9;
-}
-
-.contact {
-  padding-block: 86px;
-}
-
 .contact-card {
   position: relative;
   display: flex;
@@ -703,6 +541,10 @@ h1 span,
   border: 1px solid #e8e9e2;
   border-radius: 11px;
   background: #eeefe8;
+}
+
+.services .contact-card {
+  margin-top: 40px;
 }
 
 .contact-copy {
@@ -833,11 +675,6 @@ button:focus-visible {
     bottom: 37px;
   }
 
-  .intro-inner .strip-side {
-    max-width: 240px;
-    text-align: right;
-  }
-
   .section {
     padding-block: 82px;
   }
@@ -849,10 +686,6 @@ button:focus-visible {
   .service-card {
     min-height: 275px;
     padding: 19px 16px;
-  }
-
-  .about {
-    gap: 40px;
   }
 
   .contact-card {
@@ -1019,26 +852,6 @@ button:focus-visible {
     bottom: -7px;
   }
 
-  .intro-inner {
-    min-height: 78px;
-    gap: 11px;
-  }
-
-  .intro-inner p {
-    max-width: 45%;
-    font-size: 10px;
-    line-height: 1.55;
-  }
-
-  .intro-inner .strip-side {
-    max-width: 44%;
-    font-size: 9px;
-  }
-
-  .strip-star {
-    font-size: 15px;
-  }
-
   .section {
     padding-block: 68px;
   }
@@ -1048,8 +861,7 @@ button:focus-visible {
     margin-bottom: 27px;
   }
 
-  .section-heading h2,
-  .about-copy h2 {
+  .section-heading h2 {
     font-size: 38px;
     letter-spacing: -2px;
   }
@@ -1079,37 +891,8 @@ button:focus-visible {
     margin-bottom: 14px;
   }
 
-  .about {
-    grid-template-columns: 1fr;
-    gap: 28px;
-    padding-block: 47px 52px;
-  }
-
-  .about-visual {
-    min-height: 265px;
-  }
-
-  .about-circle {
-    width: 225px;
-    height: 225px;
-  }
-
-  .about-sticker {
-    right: 4%;
-    bottom: 6px;
-  }
-
-  .about-label {
-    bottom: 0;
-    left: 0;
-  }
-
-  .about-copy h2 {
-    margin-bottom: 14px;
-  }
-
-  .contact {
-    padding-block: 57px;
+  .services .contact-card {
+    margin-top: 28px;
   }
 
   .contact-card {
